@@ -1,37 +1,135 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/skeleton.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="">
-            <h1 class="">Alex Carter</h1>
-            <hr/>
-            <h2>Programmer</h2>
-            <br/>
-            <div class="container social">
-                <h3>Social</h3>
-                <a class="button" href="#">GitHub</a>
-                <a class="button" href="#">Discord</a>
-                <a class="button" href="#">Twitter</a>
-                <a class="button" href="#">Disnode</a>
-            </div>
+<!doctype html>
+<html lang="en">
 
-            <div class="container social">
-                <h3>Skills</h3>
-                <ul>
-                    <li>NodeJS (Web Backends, CLI Tools, Discord Bots, NPM Package Development)</li>
-                    <li>C# (WinForms, CLI, Unity)</li>
-                    <li>Java (Android, FTC Robotics)</li>
-                    <li>Web (React, GraphQL, Apollo, Redux, HTML5, CSS)</li>
-                    <li>Mobile (Android and React Native)</li>
-                    <li>Game Development (Unreal Engine 4 and Unity)</li>
-                    <li>DevOps (CircleCI, Google Cloud Platform, PM2</li>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A custom HTML and Javascript page to render the 'Networked Particles' effect as the background to a page.">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Networked | AlexCarter</title>
+</head>
 
-                </ul>
-            </div>
+<body>
+
+  <canvas id="myCanvas"></canvas>
+  <div class="title-container">
+    <h1 id="title">Alex Carter</h1>
+    <hr />
+    <h3>Junior Software Developer</h3>
+
+  </div>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide projects" data-ride="carousel">
+    <h1 class="projects-heading">Projects</h1>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row projects-container">
+
+          <div class="test-container col-sm">
+            <h1>Cards Against Discord</h1>
+            <p>A fully-featured Discord Bot that re-creates the popular Card Game</p>
+
+          </div>
+          <div class="test-container col-sm">
+            <h1>Disnode Ultra</h1>
+            <p>A microservice based system for running production Discord bots and collect payment for them.</p>
+            <a href="https://ultra.disnode.app">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>Disnode Logger JS</h1>
+            <p>An open-source modular logger for NodeJS.</p>
+            <a href="https://github.com/DisnodeTeam/disnode-logger">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>Disnode Team</h1>
+            <p>Project Desc</p>
+
+          </div>
+
         </div>
-    </body>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row projects-container">
+
+          <div class="test-container col-sm">
+            <h1>FRC 4056</h1>
+            <p>A FRC high school robotics, with our software stack including C++, NodeJS, and python.</p>
+            <a href="https://github.com/ElectroTitans">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>FTC 7195</h1>
+            <p>A FTC high school robotics, with our software stack Java and NodeJS.</p>
+            <a href="">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>DogeCV</h1>
+            <p>Project Desc</p>
+            <a href="">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>VictorySuite</h1>
+            <p>Project Desc</p>
+            <a href="">Project Link</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row projects-container">
+
+
+          <div class="test-container col-sm">
+            <h1>Networked Particles</h1>
+            <p>Project Desc</p>
+            <a href="">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>Team4056.org</h1>
+            <p>Project Desc</p>
+            <a href="">Project Link</a>
+          </div>
+          <div class="test-container col-sm">
+            <h1>Project Name</h1>
+            <p>Project Desc</p>
+            <a href="">Project Link</a>
+          </div>
+
+          <div class="test-container col-sm">
+            <h1>Project Name</h1>
+            <p>Project Desc</p>
+            <a href="">Project Link</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  <script src="script.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
 
 </html>
