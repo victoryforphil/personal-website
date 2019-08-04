@@ -1,6 +1,8 @@
 body{
-  background-color: #040404;
-  overflow: hidden;
+  background-color: #eeeeee;
+  overflow: scroll;
+  margin: 0;
+  font-family: ProductSansNormal;
 }
 
 @font-face {
@@ -9,8 +11,8 @@ body{
 }
 
 @font-face {
-    font-family: ProductSansNormal;
-    src: url("../fonts/Product Sans Regular.ttf");
+    font-family: ProductSansBold;
+    src: url("../fonts/Product Sans Bold.ttf");
 }
 
 @font-face {
@@ -20,24 +22,41 @@ body{
 
 .title-container {
     position: absolute;
-    top: 40%;
-    left: 42%;
+   
     text-align: center;
     z-index: 1;
+    top: 300px;
+    width: 30vw;
+    height: fit-content;
+    margin-left: 35%;
+    background-color: rgba(255 , 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(200 , 200, 200, 0.95);
+    
+}
+#me{
+  border-radius: 50%;
+  position: relative;
+  top: -150px;
+  width: 60%;
+  margin-bottom: -140px;
+  box-shadow: 10px 10px 10px rgba(200 , 200, 200, 0.95);
 }
 .title-container h1{
-  font-family: HACKED;
+  font-family: ProductSansBold;
   font-size: 70px;
-  color: #FFFFFF
+  color: rgb(50, 50, 50)
 }
 .title-container h3{
   font-family: ProductSansNormal;
   font-size: 20px;
-  color: #FFFFFF
+  color: #555555;
+  margin-bottom: 20px;
 }
 
 .title-container hr{
-  color: #FFFFFF;
+  color:#555555;
   background-color: #FFFFFF;
   width: 60%;
   z-index: 1;
@@ -45,52 +64,84 @@ body{
   margin-bottom: 2;
 }
 
+#cali{
+  padding-left: 5px;
+  width:30px;
+}
+
+.title-container button{
+  font-family: ProductSansNormal;
+  font-size: 20px;
+  background-color: rgb(49, 148, 230);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 50px;
+  border: none;
+  border-radius: 25px;
+
+}
+
+.title-container button :active{
+  box-shadow: 10px 10px 10px rgba(200 , 200, 200, 0.95);
+}
 canvas {
-    position: absolute;
     top: 0px;
     left: 0px;
     z-index: -3;
-
-}
-.projects{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    height: 100%;
     width: 100%;
-}
-.projects-container{
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-bottom: 5vh;
-}
-.projects-heading{
-  text-align: center;
-  color:#FFFFFF
+    overflow: hidden;
+    margin: 0;
+
 }
 
-.test-container{
-  font-family: ProductSansNormal;
-  color: #8282A5;
+.main-page{
   text-align: center;
-  border-radius: 5px;
-  border-color: #8282A5
-  border-width: 1px;
-  border-style: solid;
-  margin-left: 1vw;
-  width: 10%;
-  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  width: 100%; 
+  padding-top: 100px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px -10px 10px rgba(200 , 200, 200, 0.95);
 }
 
-.test-container:hover{
-  font-family: ProductSansNormal;
-  color: #FFFFFF;
-  text-align: center;
-  border-radius: 5px;
-  border-color: #FFFFFF
-  border-width: 1px;
-  border-style: solid;
-  margin-left: 1vw;
-  width: 10%;
-  z-index: 1;
-  box-shadow:3px 3px 10px 1px #FFFFFF;
+.main-page h1{
+  font-family: ProductSansBold;
+  font-size: 70px;
+  color: rgb(50, 50, 50);
+  text-decoration: underline;
+}
+
+.main-page h1:hover{
+  font-family: ProductSansBold;
+  font-size: 70px;
+  color: rgb(50, 50, 200);
+  text-decoration: underline;
+}
+
+
+.card{
+  margin: 10px;
+  padding: 30px;
+  border-radius: 25px;
+  width: fit-content;
+  box-shadow: 5px 5px 5px rgba(200 , 200, 200, 0.95);
+}
+
+.skills
+{
+  padding: 20px;
+  background-color: #FFFFFF;
+
+}
+
+
+.card li{
+  display: inline;
+  text-align: left;
+  
 }

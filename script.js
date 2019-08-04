@@ -82,7 +82,7 @@ function genParticle(){
 
         },
         draw: function(){
-            ctx.fillStyle=`rgba(200,200,200,${this.opacity.current}`;
+            ctx.fillStyle=`rgba(30 ,30,30,${this.opacity.current}`;
             ctx.fillRect(this.position.x, this.position.y, this.size.x, this.size.y);
             ctx.font = '10px HACKED';
             ctx.fillText('ID: ' + this.id + ` ${(this.position.x - this.position.y).toFixed(1)}`, this.position.x,  this.position.y - 2);
@@ -112,7 +112,7 @@ function genParticle(){
                   ctx.lineWidth=3;
                 }else {
                   ctx.lineWidth=1;
-                  ctx.strokeStyle=`rgba(200,200,200,${(nearest.distance / 200) * 0.5 - 0.05}`;
+                  ctx.strokeStyle=`rgba(10,10,10,${(nearest.distance / 200) * 0.5 - 0.05}`;
                 }
                 ctx.stroke();
             }
